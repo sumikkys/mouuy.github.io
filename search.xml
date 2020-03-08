@@ -25,7 +25,18 @@
 <h2 id="五、添加favicon"><a href="#五、添加favicon" class="headerlink" title="五、添加favicon"></a>五、添加favicon</h2><p>编辑/themes/next/_config.yml</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">favicon:</span><br><span class="line">  small: &#x2F;images&#x2F;favicon-16x16-next.png</span><br><span class="line">  medium: &#x2F;images&#x2F;favicon-32x32-next.png</span><br><span class="line">  apple_touch_icon: &#x2F;images&#x2F;apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab: &#x2F;images&#x2F;logo.svg</span><br><span class="line">  #android_manifest: &#x2F;images&#x2F;manifest.json</span><br><span class="line">  #ms_browserconfig: &#x2F;images&#x2F;browserconfig.xml</span><br></pre></td></tr></table></figure>
 <p>修改相关url<br>完成</p>
-<h2 id="六、修改高亮样式"><a href="#六、修改高亮样式" class="headerlink" title="六、修改高亮样式"></a>六、修改高亮样式</h2><p>编辑/themes/next/_config.yml</p>
+<h2 id="六、修改高亮样式"><a href="#六、修改高亮样式" class="headerlink" title="六、修改高亮样式"></a>六、修改高亮样式</h2><p>编辑/themes/next/_config.yml<br>next提供了八种样式  </p>
+<ul>
+<li>normal  </li>
+<li>night  </li>
+<li>night blue  </li>
+<li>night bright  </li>
+<li>night eighties  </li>
+<li>solarized  </li>
+<li>solarized dark  </li>
+<li>galactic  </li>
+</ul>
+<p>我选择使用night</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">highlight_theme: night</span><br></pre></td></tr></table></figure>
 <p>完成</p>
 <h2 id="七、主题中添加百度推送"><a href="#七、主题中添加百度推送" class="headerlink" title="七、主题中添加百度推送"></a>七、主题中添加百度推送</h2><p>编辑/themes/next/_config.yml</p>
