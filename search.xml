@@ -3,7 +3,7 @@
   <entry>
     <title>Hexo-Next主题配置</title>
     <url>/Hexo/hexoconfig/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hexo-Next主题配置"><a href="#Hexo-Next主题配置" class="headerlink" title="Hexo-Next主题配置"></a>Hexo-Next主题配置</h1><p>记录<a href="https://mouuy.com">本博客</a>Next主题的修改配置。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hexo-Next主题配置"><a href="#Hexo-Next主题配置" class="headerlink" title="Hexo-Next主题配置"></a>Hexo-Next主题配置</h1><p>记录<a href="https://mouuy.com">本博客</a>Next主题的修改配置。大部分内容仅适用于<strong>Next主题</strong>。</p>
 <a id="more"></a>
 <h2 id="一、为添加侧边栏分类"><a href="#一、为添加侧边栏分类" class="headerlink" title="一、为添加侧边栏分类"></a>一、为添加侧边栏分类</h2><p>在博客根目录输入  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
@@ -42,7 +42,7 @@
 <h2 id="七、主题中添加百度推送"><a href="#七、主题中添加百度推送" class="headerlink" title="七、主题中添加百度推送"></a>七、主题中添加百度推送</h2><p>编辑/themes/next/_config.yml</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">baidu_push: true</span><br><span class="line">...</span><br><span class="line">seo: true</span><br></pre></td></tr></table></figure>
 <p>完成</p>
-<h2 id="八、添加Pjax"><a href="#八、添加Pjax" class="headerlink" title="八、添加Pjax"></a>八、添加Pjax</h2><p>来到/themes/next</p>
+<h2 id="八、添加Pjax"><a href="#八、添加Pjax" class="headerlink" title="八、添加Pjax"></a>八、添加Pjax</h2><p><strong>出现Bug暂时停用</strong><br>来到/themes/next</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pjax source&#x2F;lib&#x2F;pjax</span><br></pre></td></tr></table></figure>
 <p>编辑/themes/next/_config.yml</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pjax: true</span><br></pre></td></tr></table></figure>
