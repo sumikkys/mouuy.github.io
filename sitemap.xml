@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://mouuy.com/Hexo/hexoconfig/</loc>
+    <loc>https://mouuy.com/archives/144/</loc>
     
-    <lastmod>2020-03-10T08:46:13.400Z</lastmod>
+    <lastmod>2020-08-04T10:34:08.651Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mouuy.com/archives/6290/</loc>
+    
+    <lastmod>2020-08-04T10:11:26.917Z</lastmod>
     
   </url>
   
@@ -16,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://mouuy.com/%E6%97%A5%E5%B8%B8/hello-world/</loc>
+    <loc>https://mouuy.com/archives/16107/</loc>
     
     <lastmod>2020-03-08T09:02:52.423Z</lastmod>
     
