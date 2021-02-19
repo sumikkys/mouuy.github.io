@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/archives/16107/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world!"></a>Hello world!</h1><p>欢迎来到<a href="https://mouuy.com">怀中道标</a>!<br>Hello world!</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>白嫖？使用Github+Jsdelivr免费Cdn与图床。</title>
     <url>/archives/144/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
 <p>写博客图片太多怎么办？国内服务器小水管静态文件太多怎么办？来白嫖Jsdelivr吧。</p>
 </blockquote>
 <a id="more"></a>
@@ -49,7 +61,7 @@
   <entry>
     <title>Hexo-Next主题配置</title>
     <url>/archives/6290/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hexo-Next主题配置"><a href="#Hexo-Next主题配置" class="headerlink" title="Hexo-Next主题配置"></a>Hexo-Next主题配置</h1><p>记录<a href="https://mouuy.com">本博客</a>Next主题的修改配置。大部分内容仅适用于<strong>Next主题</strong>。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hexo-Next主题配置"><a href="#Hexo-Next主题配置" class="headerlink" title="Hexo-Next主题配置"></a>Hexo-Next主题配置</h1><p>记录<a href="https://mouuy.com">本博客</a>Next主题的修改配置。大部分内容仅适用于<strong>Next主题</strong>。</p>
 <a id="more"></a>
 <h2 id="一、为添加侧边栏分类"><a href="#一、为添加侧边栏分类" class="headerlink" title="一、为添加侧边栏分类"></a>一、为添加侧边栏分类</h2><p>在博客根目录输入  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
@@ -107,18 +119,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/archives/16107/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world!"></a>Hello world!</h1><p>欢迎来到<a href="https://mouuy.com">怀中道标</a>!<br>Hello world!</p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
       </tags>
   </entry>
 </search>
