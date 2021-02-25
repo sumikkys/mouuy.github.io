@@ -1,43 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>白嫖？使用Github+Jsdelivr免费Cdn与图床。</title>
-    <url>/archives/144/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>写博客图片太多怎么办？国内服务器小水管静态文件太多怎么办？来白嫖Jsdelivr吧。</p>
-</blockquote>
-<a id="more"></a>
-<h2 id="Jsdelivr介绍"><a href="#Jsdelivr介绍" class="headerlink" title="Jsdelivr介绍"></a>Jsdelivr介绍</h2><p>Jsdelivr是一个很好用的免费公用CDN，并直接整合了GitHub的资源，方便使用，更为重要的是：<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-1.png" alt="jsdelivr"></p>
-<p>这意味Jsdelivr在国内拥有节点，速度不逊于大部分国内cdn<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-2.png" alt="ping"><br>直接ping，华东联通可以达到个位数延迟。</p>
-<p>由于Jsdelivr整合了Github的资源，我们可以通过Github来上传我们的资源，以后图片、css和js啥的静态资源往里面一丢，速度直接起飞。</p>
-<h2 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h2><p>为了方便的将资源上传到Github，我将使用Git——世界上目前最先进的分布式版本控制系统。</p>
-<p>相信大部分人都与我一样，日常使用windows系统，因此只介绍windows下使用方法，只包含几条必要命令。  </p>
-<p>你可以直接前往<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM=" title="https://git-scm.com/downloads">官网<i class="fa fa-external-link"></i></span>下载安装程序。  </p>
-<p>来到GitHub，先为自己建一个仓库吧。<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-3.png" alt="仓库"><br>进入仓库，右上角可见绿色的<strong>clone and downloding</strong>，其中提供了两种仓库远程连接方式，SSH与Https。  </p>
-<p>本着简单的理念，这里演示Https连接，复制地址<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-4.png" alt="地址"><br>来到你系统中存放你要上传文件的目录，右击选择git bash here。  </p>
-<p>然后输入</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone 你的连接地址</span><br><span class="line">git status</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-5.png" alt="git"><br>接下来你新增的文件会用红色表示</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m 提交</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-<p>提交上传一气呵成，过程中会需要你输入Github的账号密码，完成后就可以在仓库看到你的文件了。</p>
-<h2 id="jsdelivr的使用"><a href="#jsdelivr的使用" class="headerlink" title="jsdelivr的使用"></a>jsdelivr的使用</h2><p>说到jsdelivr的用法，其实很简单，比如：</p>
-<p>1.jpg在仓库中的目录是 images/1.jpg</p>
-<p>那么在jsdelivr中则是</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;用户名&#x2F;仓库名&#x2F;images&#x2F;1.jpg</span><br></pre></td></tr></table></figure>
-<p>很好理解吧。</p>
-<p>如果你想要版本控制，调用v1.0版本中的文件则是</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;用户名&#x2F;仓库名@v1.0&#x2F;images&#x2F;1.jpg</span><br></pre></td></tr></table></figure>
-
-<p>若不输入版本号，默认使用最新文件。</p>
-<h2 id="Wordpress中的使用"><a href="#Wordpress中的使用" class="headerlink" title="Wordpress中的使用"></a>Wordpress中的使用</h2><p>利用jsdelivr，把你博客中诸如css，js，图片等静态文件全丢进cdn吧。</p>
-<p>问题来了，怎么在Wordpress中调用？</p>
-<p>其实较有名的插件<strong>wp super cache</strong>就可以完成这项工作。</p>
-<p>在设置的cdn一栏，将off-site URL改成你的仓库地址<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-6.png" alt="cdn"></p>
-<p>你可按需求选择要由cdn提供的文件夹，并可排除.php等后缀的动态文件<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-7.png" alt="排除"></p>
-<p>由于我目前使用的主题可以直接使用来自cdn的文件，于是就只将其作为图床。</p>
-<p>勾选上面的开启CDN支持后，保存更改。</p>
-<p>随便选一篇文章，在新标签页中打开图片，地址已经来自jsdelivr了。</p>
-<p>由此，我们可以将jsdelivr作为免费图床，成功拯救1M小水管的服务器于水火之中。</p>
+    <title>Hello World</title>
+    <url>/archives/16107/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world!"></a>Hello world!</h1><p>欢迎来到<a href="https://mouuy.com">怀中道标</a>!<br>Hello world!</p>
 ]]></content>
       <categories>
         <category>日常</category>
@@ -110,9 +76,43 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/archives/16107/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world!"></a>Hello world!</h1><p>欢迎来到<a href="https://mouuy.com">怀中道标</a>!<br>Hello world!</p>
+    <title>白嫖？使用Github+Jsdelivr免费Cdn与图床。</title>
+    <url>/archives/144/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>写博客图片太多怎么办？国内服务器小水管静态文件太多怎么办？来白嫖Jsdelivr吧。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="Jsdelivr介绍"><a href="#Jsdelivr介绍" class="headerlink" title="Jsdelivr介绍"></a>Jsdelivr介绍</h2><p>Jsdelivr是一个很好用的免费公用CDN，并直接整合了GitHub的资源，方便使用，更为重要的是：<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-1.png" alt="jsdelivr"></p>
+<p>这意味Jsdelivr在国内拥有节点，速度不逊于大部分国内cdn<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-2.png" alt="ping"><br>直接ping，华东联通可以达到个位数延迟。</p>
+<p>由于Jsdelivr整合了Github的资源，我们可以通过Github来上传我们的资源，以后图片、css和js啥的静态资源往里面一丢，速度直接起飞。</p>
+<h2 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h2><p>为了方便的将资源上传到Github，我将使用Git——世界上目前最先进的分布式版本控制系统。</p>
+<p>相信大部分人都与我一样，日常使用windows系统，因此只介绍windows下使用方法，只包含几条必要命令。  </p>
+<p>你可以直接前往<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM=" title="https://git-scm.com/downloads">官网<i class="fa fa-external-link"></i></span>下载安装程序。  </p>
+<p>来到GitHub，先为自己建一个仓库吧。<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-3.png" alt="仓库"><br>进入仓库，右上角可见绿色的<strong>clone and downloding</strong>，其中提供了两种仓库远程连接方式，SSH与Https。  </p>
+<p>本着简单的理念，这里演示Https连接，复制地址<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-4.png" alt="地址"><br>来到你系统中存放你要上传文件的目录，右击选择git bash here。  </p>
+<p>然后输入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone 你的连接地址</span><br><span class="line">git status</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-5.png" alt="git"><br>接下来你新增的文件会用红色表示</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m 提交</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>提交上传一气呵成，过程中会需要你输入Github的账号密码，完成后就可以在仓库看到你的文件了。</p>
+<h2 id="jsdelivr的使用"><a href="#jsdelivr的使用" class="headerlink" title="jsdelivr的使用"></a>jsdelivr的使用</h2><p>说到jsdelivr的用法，其实很简单，比如：</p>
+<p>1.jpg在仓库中的目录是 images/1.jpg</p>
+<p>那么在jsdelivr中则是</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;用户名&#x2F;仓库名&#x2F;images&#x2F;1.jpg</span><br></pre></td></tr></table></figure>
+<p>很好理解吧。</p>
+<p>如果你想要版本控制，调用v1.0版本中的文件则是</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;用户名&#x2F;仓库名@v1.0&#x2F;images&#x2F;1.jpg</span><br></pre></td></tr></table></figure>
+
+<p>若不输入版本号，默认使用最新文件。</p>
+<h2 id="Wordpress中的使用"><a href="#Wordpress中的使用" class="headerlink" title="Wordpress中的使用"></a>Wordpress中的使用</h2><p>利用jsdelivr，把你博客中诸如css，js，图片等静态文件全丢进cdn吧。</p>
+<p>问题来了，怎么在Wordpress中调用？</p>
+<p>其实较有名的插件<strong>wp super cache</strong>就可以完成这项工作。</p>
+<p>在设置的cdn一栏，将off-site URL改成你的仓库地址<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-6.png" alt="cdn"></p>
+<p>你可按需求选择要由cdn提供的文件夹，并可排除.php等后缀的动态文件<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-7.png" alt="排除"></p>
+<p>由于我目前使用的主题可以直接使用来自cdn的文件，于是就只将其作为图床。</p>
+<p>勾选上面的开启CDN支持后，保存更改。</p>
+<p>随便选一篇文章，在新标签页中打开图片，地址已经来自jsdelivr了。</p>
+<p>由此，我们可以将jsdelivr作为免费图床，成功拯救1M小水管的服务器于水火之中。</p>
 ]]></content>
       <categories>
         <category>日常</category>
