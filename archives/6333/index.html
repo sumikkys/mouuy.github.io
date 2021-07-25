@@ -1,130 +1,258 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Hexo-Next主题配置</title>
-    <url>/archives/6290/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hexo-Next主题配置"><a href="#Hexo-Next主题配置" class="headerlink" title="Hexo-Next主题配置"></a>Hexo-Next主题配置</h1><p>记录<a href="https://mouuy.com">本博客</a>Next主题的修改配置。大部分内容仅适用于<strong>Next主题</strong>。</p>
-<a id="more"></a>
-<h2 id="一、为添加侧边栏分类"><a href="#一、为添加侧边栏分类" class="headerlink" title="一、为添加侧边栏分类"></a>一、为添加侧边栏分类</h2><p>在博客根目录输入  </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>编辑/source/categories/index.md</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2020-03-02 12:33:16</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>编辑/themes/next/_config.yml</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: &#x2F; || home</span><br><span class="line">  #about: &#x2F;about&#x2F; || user</span><br><span class="line">  #tags: &#x2F;tags&#x2F; || tags</span><br><span class="line">  categories: &#x2F;categories&#x2F; || th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || heartbeat</span><br></pre></td></tr></table></figure>
-<p>完成。</p>
-<h2 id="二、编辑页脚信息"><a href="#二、编辑页脚信息" class="headerlink" title="二、编辑页脚信息"></a>二、编辑页脚信息</h2><p>去除页脚的Hexo驱动信息与Next主题信息<br>编辑/themes/next/_config.yml</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">powered:</span><br><span class="line">  # 删除hexo驱动信息</span><br><span class="line">  enable: false</span><br><span class="line">  # 删除Hexo版本信息</span><br><span class="line">  version: false</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme:</span><br><span class="line">  # 删除主题信息</span><br><span class="line">  enable: false</span><br><span class="line">  # 删除主题版本信息</span><br><span class="line">  version: false</span><br></pre></td></tr></table></figure>
-<p>完成。</p>
-<h2 id="三、添加侧栏社交"><a href="#三、添加侧栏社交" class="headerlink" title="三、添加侧栏社交"></a>三、添加侧栏社交</h2><p>编辑/themes/next/_Config.yml</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">social:</span><br><span class="line">  GitHub: https:&#x2F;&#x2F;github.com&#x2F;yourname || github</span><br><span class="line">  E-Mail: mailto:your@gmail.com || envelope</span><br><span class="line">  Weibo: https:&#x2F;&#x2F;weibo.com&#x2F;yourname || weibo</span><br><span class="line">  #Google: https:&#x2F;&#x2F;plus.google.com&#x2F;yourname || google</span><br><span class="line">  #Twitter: https:&#x2F;&#x2F;twitter.com&#x2F;yourname || twitter</span><br><span class="line">  #FB Page: https:&#x2F;&#x2F;www.facebook.com&#x2F;yourname || facebook</span><br><span class="line">  #StackOverflow: https:&#x2F;&#x2F;stackoverflow.com&#x2F;yourname || stack-overflow</span><br><span class="line">  #YouTube: https:&#x2F;&#x2F;youtube.com&#x2F;yourname || youtube</span><br><span class="line">  #Instagram: https:&#x2F;&#x2F;instagram.com&#x2F;yourname || instagram</span><br><span class="line">  #Skype: skype:yourname?call|chat || skype</span><br><span class="line">  steam: 个人资料链接 || steam</span><br></pre></td></tr></table></figure>
-<p>去除需要添加的社交平台的#，然后编辑链接<br>完成。</p>
-<h2 id="四、添加头像"><a href="#四、添加头像" class="headerlink" title="四、添加头像"></a>四、添加头像</h2><p>编辑/themes/next/_config.yml</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">avatar:</span><br><span class="line">  #设置url连接</span><br><span class="line">  url: </span><br><span class="line">  #头像转动</span><br><span class="line">  rounded: false</span><br><span class="line">  #光标移动到头像后转动</span><br><span class="line">  rotated: false</span><br></pre></td></tr></table></figure>
-<p>完成</p>
-<h2 id="五、添加favicon"><a href="#五、添加favicon" class="headerlink" title="五、添加favicon"></a>五、添加favicon</h2><p>编辑/themes/next/_config.yml</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">favicon:</span><br><span class="line">  small: &#x2F;images&#x2F;favicon-16x16-next.png</span><br><span class="line">  medium: &#x2F;images&#x2F;favicon-32x32-next.png</span><br><span class="line">  apple_touch_icon: &#x2F;images&#x2F;apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab: &#x2F;images&#x2F;logo.svg</span><br><span class="line">  #android_manifest: &#x2F;images&#x2F;manifest.json</span><br><span class="line">  #ms_browserconfig: &#x2F;images&#x2F;browserconfig.xml</span><br></pre></td></tr></table></figure>
-<p>修改相关url<br>完成</p>
-<h2 id="六、修改高亮样式"><a href="#六、修改高亮样式" class="headerlink" title="六、修改高亮样式"></a>六、修改高亮样式</h2><p>编辑/themes/next/_config.yml<br>next提供了八种样式  </p>
-<ul>
-<li>normal  </li>
-<li>night  </li>
-<li>night blue  </li>
-<li>night bright  </li>
-<li>night eighties  </li>
-<li>solarized  </li>
-<li>solarized dark  </li>
-<li>galactic  </li>
-</ul>
-<p>我选择使用night</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">highlight_theme: night</span><br></pre></td></tr></table></figure>
-<p>完成</p>
-<h2 id="七、主题中添加百度推送"><a href="#七、主题中添加百度推送" class="headerlink" title="七、主题中添加百度推送"></a>七、主题中添加百度推送</h2><p>编辑/themes/next/_config.yml</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">baidu_push: true</span><br><span class="line">...</span><br><span class="line">seo: true</span><br></pre></td></tr></table></figure>
-<p>完成</p>
-<h2 id="八、添加Pjax"><a href="#八、添加Pjax" class="headerlink" title="八、添加Pjax"></a>八、添加Pjax</h2><p><strong>出现Bug暂时停用</strong><br>来到/themes/next</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pjax source&#x2F;lib&#x2F;pjax</span><br></pre></td></tr></table></figure>
-<p>编辑/themes/next/_config.yml</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pjax: true</span><br></pre></td></tr></table></figure>
-<p>完成。</p>
-<h2 id="九、添加全局aplayer播放器"><a href="#九、添加全局aplayer播放器" class="headerlink" title="九、添加全局aplayer播放器"></a>九、添加全局aplayer播放器</h2><p>本改动建立在 <strong>八、添加Pjax</strong> 的基础上，如果你使用了Pjax，就可实现不间断播放。并参考了Macyrate的<span class="exturl" data-url="aHR0cHM6Ly9oYWt1cmVpLnJlZC8yMDE5LzExLzI1LyVFNCVCOCVCQUhleG8lRTUlOEQlOUElRTUlQUUlQTIlRTYlQjclQkIlRTUlOEElQTAlRTUlODUlQTglRTUlQjElODBBUGxheWVyJUU2JTkyJUFEJUU2JTk0JUJFJUU1JTk5JUE4Lw==" title="https://hakurei.red/2019/11/25/%E4%B8%BAHexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%85%A8%E5%B1%80APlayer%E6%92%AD%E6%94%BE%E5%99%A8/">相关文章<i class="fa fa-external-link"></i></span>。<br>复制以下代码到\theme\next\layout_layout.swig</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引用依赖 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> </span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">"https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- APlayer本体 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"aplayer"</span> </span></span><br><span class="line"><span class="tag">  <span class="attr">data-id</span>=<span class="string">"2465890057"</span> #你的网易云歌单<span class="attr">ID</span></span></span><br><span class="line"><span class="tag">  <span class="attr">data-server</span>=<span class="string">"netease"</span> #设置网易云</span></span><br><span class="line"><span class="tag">  <span class="attr">data-type</span>=<span class="string">"playlist"</span> #设置歌单</span></span><br><span class="line"><span class="tag">  <span class="attr">data-fixed</span>=<span class="string">"true"</span> #吸底模式</span></span><br><span class="line"><span class="tag">  <span class="attr">data-autoplay</span>=<span class="string">"true"</span> #设置自动播放</span></span><br><span class="line"><span class="tag">  <span class="attr">data-order</span>=<span class="string">"random"</span> #设置播放顺序</span></span><br><span class="line"><span class="tag">  <span class="attr">data-volume</span>=<span class="string">"0.55"</span> </span></span><br><span class="line"><span class="tag">  <span class="attr">data-theme</span>=<span class="string">"#cc543a"</span> </span></span><br><span class="line"><span class="tag">  <span class="attr">date-preload</span>=<span class="string">"auto"</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--如果将本体放在body里面导致页面加载出现问题，请尝试放到body体后面--&gt;</span></span><br></pre></td></tr></table></figure>
-<p>aplayer的属性具体设置参考请<span class="exturl" data-url="aHR0cHM6Ly9hcGxheWVyLmpzLm9yZy8jL3poLUhhbnMvP2lkPSVFNSU4RiU4MiVFNiU5NSVCMA==" title="https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0">aplayer中文文档<i class="fa fa-external-link"></i></span>  </p>
-<table><tr><td bgcolor=orange>使用时请在前面加上data-  </td></tr></table> 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/mouuy/images@V1.3/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<p>感谢<span class="exturl" data-url="aHR0cHM6Ly9oYWt1cmVpLnJlZA==" title="https://hakurei.red">Macyrate<i class="fa fa-external-link"></i></span><br>完成。</p>
-<h2 id="十、修改主题配色"><a href="#十、修改主题配色" class="headerlink" title="十、修改主题配色"></a>十、修改主题配色</h2><p>参考<span class="exturl" data-url="aHR0cHM6Ly96aG91aHVpeC5jbi8yMDE2LzExLzI0LyVFNCVCRiVBRSVFNiU5NCVCOUhleG8lRTclOUElODROZXh0JUU0JUI4JUJCJUU5JUEyJTk4Lw==" title="https://zhouhuix.cn/2016/11/24/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84Next%E4%B8%BB%E9%A2%98/">文章<i class="fa fa-external-link"></i></span><br>感谢<span class="exturl" data-url="aHR0cHM6Ly96aG91aHVpeC5jbi8=" title="https://zhouhuix.cn/">周阳光<i class="fa fa-external-link"></i></span><br>编辑/themes/next/source/css/_variables/base.styl</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$whitesmoke   &#x3D; #f5f5f5</span><br><span class="line">$gainsboro    &#x3D; #eee  &#x2F;&#x2F;这个是边栏头像外框的颜色，</span><br><span class="line">$gray-lighter &#x3D; #ddd  &#x2F;&#x2F;文章中插入图片边框颜色</span><br><span class="line">$grey-light   &#x3D; #ccc  &#x2F;&#x2F;文章之间分割线、下划线颜色</span><br><span class="line">$grey         &#x3D; #bbb  &#x2F;&#x2F;页面选中圆点颜色</span><br><span class="line">$grey-dark    &#x3D; #999</span><br><span class="line">$grey-dim     &#x3D; #666 &#x2F;&#x2F;侧边栏目录字体颜色</span><br><span class="line">$black-light  &#x3D; #555 &#x2F;&#x2F;修改文章字体颜色</span><br><span class="line">$black-dim    &#x3D; #333</span><br><span class="line">$black-deep   &#x3D; #495a80  &#x2F;&#x2F;修改主题的颜色，这里我已经改成老蓝色了。</span><br><span class="line">$red          &#x3D; #ff2a2a</span><br><span class="line">$blue-bright  &#x3D; #87daff</span><br><span class="line">$blue         &#x3D; #0684bd</span><br><span class="line">$blue-deep    &#x3D; #262a30</span><br><span class="line">$orange       &#x3D; #F39D01 &#x2F;&#x2F;浏览文章时，目录选中的颜色</span><br></pre></td></tr></table></figure>
-<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h2>]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/archives/16107/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world!"></a>Hello world!</h1><p>欢迎来到<a href="https://mouuy.com">怀中道标</a>!<br>Hello world!</p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>白嫖？使用Github+Jsdelivr免费Cdn与图床。</title>
-    <url>/archives/144/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>写博客图片太多怎么办？国内服务器小水管静态文件太多怎么办？来白嫖Jsdelivr吧。</p>
-</blockquote>
-<a id="more"></a>
-<h2 id="Jsdelivr介绍"><a href="#Jsdelivr介绍" class="headerlink" title="Jsdelivr介绍"></a>Jsdelivr介绍</h2><p>Jsdelivr是一个很好用的免费公用CDN，并直接整合了GitHub的资源，方便使用，更为重要的是：<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-1.png" alt="jsdelivr"></p>
-<p>这意味Jsdelivr在国内拥有节点，速度不逊于大部分国内cdn<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-2.png" alt="ping"><br>直接ping，华东联通可以达到个位数延迟。</p>
-<p>由于Jsdelivr整合了Github的资源，我们可以通过Github来上传我们的资源，以后图片、css和js啥的静态资源往里面一丢，速度直接起飞。</p>
-<h2 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h2><p>为了方便的将资源上传到Github，我将使用Git——世界上目前最先进的分布式版本控制系统。</p>
-<p>相信大部分人都与我一样，日常使用windows系统，因此只介绍windows下使用方法，只包含几条必要命令。  </p>
-<p>你可以直接前往<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM=" title="https://git-scm.com/downloads">官网<i class="fa fa-external-link"></i></span>下载安装程序。  </p>
-<p>来到GitHub，先为自己建一个仓库吧。<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-3.png" alt="仓库"><br>进入仓库，右上角可见绿色的<strong>clone and downloding</strong>，其中提供了两种仓库远程连接方式，SSH与Https。  </p>
-<p>本着简单的理念，这里演示Https连接，复制地址<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-4.png" alt="地址"><br>来到你系统中存放你要上传文件的目录，右击选择git bash here。  </p>
-<p>然后输入</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone 你的连接地址</span><br><span class="line">git status</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-5.png" alt="git"><br>接下来你新增的文件会用红色表示</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m 提交</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-<p>提交上传一气呵成，过程中会需要你输入Github的账号密码，完成后就可以在仓库看到你的文件了。</p>
-<h2 id="jsdelivr的使用"><a href="#jsdelivr的使用" class="headerlink" title="jsdelivr的使用"></a>jsdelivr的使用</h2><p>说到jsdelivr的用法，其实很简单，比如：</p>
-<p>1.jpg在仓库中的目录是 images/1.jpg</p>
-<p>那么在jsdelivr中则是</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;用户名&#x2F;仓库名&#x2F;images&#x2F;1.jpg</span><br></pre></td></tr></table></figure>
-<p>很好理解吧。</p>
-<p>如果你想要版本控制，调用v1.0版本中的文件则是</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;用户名&#x2F;仓库名@v1.0&#x2F;images&#x2F;1.jpg</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/mouuy/mouuy.github.io@latest/css/main.css">
 
-<p>若不输入版本号，默认使用最新文件。</p>
-<h2 id="Wordpress中的使用"><a href="#Wordpress中的使用" class="headerlink" title="Wordpress中的使用"></a>Wordpress中的使用</h2><p>利用jsdelivr，把你博客中诸如css，js，图片等静态文件全丢进cdn吧。</p>
-<p>问题来了，怎么在Wordpress中调用？</p>
-<p>其实较有名的插件<strong>wp super cache</strong>就可以完成这项工作。</p>
-<p>在设置的cdn一栏，将off-site URL改成你的仓库地址<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-6.png" alt="cdn"></p>
-<p>你可按需求选择要由cdn提供的文件夹，并可排除.php等后缀的动态文件<br><img data-src="https://cdn.jsdelivr.net/gh/mouuy/images/wp-content/uploads/2020/03/04-7.png" alt="排除"></p>
-<p>由于我目前使用的主题可以直接使用来自cdn的文件，于是就只将其作为图床。</p>
-<p>勾选上面的开启CDN支持后，保存更改。</p>
-<p>随便选一篇文章，在新标签页中打开图片，地址已经来自jsdelivr了。</p>
-<p>由此，我们可以将jsdelivr作为免费图床，成功拯救1M小水管的服务器于水火之中。</p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>探究：工团主义是什么？&amp;一战后国际左翼运动&amp;列宁主义</title>
-    <url>/archives/6333/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>“我一直确信，如果我们想使社会主义运动恢复生机，就必须得摧毁俄国神话。” ——乔治·奥威尔</p>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"mouuy.com","root":"/","scheme":"Pisces","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="“我一直确信，如果我们想使社会主义运动恢复生机，就必须得摧毁俄国神话。” ——乔治·奥威尔">
+<meta property="og:type" content="article">
+<meta property="og:title" content="探究：工团主义是什么？&amp;一战后国际左翼运动&amp;列宁主义">
+<meta property="og:url" content="https://mouuy.com/archives/6333/index.html">
+<meta property="og:site_name" content="怀中道标">
+<meta property="og:description" content="“我一直确信，如果我们想使社会主义运动恢复生机，就必须得摧毁俄国神话。” ——乔治·奥威尔">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.mouuy.com/27BOOKORWELLJP-jumbo.jpg">
+<meta property="og:image" content="https://img.mouuy.com/Anarchist_flag.jpg">
+<meta property="og:image" content="https://img.mouuy.com/Bakunin_Nadar.jpg">
+<meta property="og:image" content="https://img.mouuy.com/Vladimir_Lenin.jpg">
+<meta property="og:image" content="https://img.mouuy.com/Rosa_Luxemburg.jpg">
+<meta property="article:published_time" content="2021-07-25T02:52:47.000Z">
+<meta property="article:modified_time" content="2021-07-25T11:12:57.900Z">
+<meta property="article:author" content="Mouuy">
+<meta property="article:tag" content="政治">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.mouuy.com/27BOOKORWELLJP-jumbo.jpg">
+
+<link rel="canonical" href="https://mouuy.com/archives/6333/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true
+  };
+</script>
+
+  <title>探究：工团主义是什么？&一战后国际左翼运动&列宁主义 | 怀中道标</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="怀中道标" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">怀中道标</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">Mouuy's blog</h1>
+      
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-rss">
+
+    <a href="/atom.xml" rel="section"><i class="fa fa-fw fa-rss"></i>RSS</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="search-pop-overlay">
+  <div class="popup search-popup">
+      <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mouuy.com/archives/6333/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/mouuy/images@V1.3/1.jpg">
+      <meta itemprop="name" content="Mouuy">
+      <meta itemprop="description" content="无聊的人">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="怀中道标">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          探究：工团主义是什么？&一战后国际左翼运动&列宁主义
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-25 02:52:47 / 修改时间：11:12:57" itemprop="dateCreated datePublished" datetime="2021-07-25T02:52:47+00:00">2021-07-25</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/archives/6333/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/archives/6333/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>“我一直确信，如果我们想使社会主义运动恢复生机，就必须得摧毁俄国神话。” ——乔治·奥威尔</p>
 <a id="more"></a>
 
  <img data-src="https://img.mouuy.com/27BOOKORWELLJP-jumbo.jpg" width = "300" height = "400" alt="乔治奥威尔"/>
@@ -202,9 +330,340 @@
 <p>1912年，在社会党国际局成员中，中派和右派代表已经占据了压倒性多数。一战爆发后，大多数社会主义党的领袖公开违背此前通过的《巴塞尔宣言》，纷纷站到了本国政府一边，支持“保卫祖国”的战争。在现实面前，民族主义战胜了无产阶级国际主义。在第二国际内部，具有重要影响的德国社会民主党成了这场社会主义运动史上重大叛变的领头羊。</p>
 <p>1919年2月，右派在伯尔尼召开了社会党国际代表会议，并且宣告之前已形同解散的第二国际的复活，又称伯尔尼国际。同年3月，各国共产党组织在莫斯科宣布建立第三国际，亦称共产国际。1921年，中派在维也纳成立了社会党国际工人联合会，别称维也纳国际。至此，第二国际在组织上完全退出了历史舞台。</p>
 <h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>这篇文章结束了，但这并不是全部。在下篇文章中，我们将会了解十月革命后苏维埃政府的政策、斯大林主义与托洛茨基主义，理解<strong>一国建成社会主义论</strong>与<strong>不断革命论</strong>，具体解释威权社会主义掌握主动权后，对国际社会主义运动的发展，时间线将延伸至二战全面爆发前。</p>
-]]></content>
-      <tags>
-        <tag>政治</tag>
-      </tags>
-  </entry>
-</search>
+
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+            <div class="social-item">
+              <a target="_blank" class="social-link" href="/atom.xml">
+                <span class="icon">
+                  <i class="fa fa-rss"></i>
+                </span>
+
+                <span class="label">RSS</span>
+              </a>
+            </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%94%BF%E6%B2%BB/" rel="tag"># 政治</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/archives/144/" rel="prev" title="白嫖？使用Github+Jsdelivr免费Cdn与图床。">
+      <i class="fa fa-chevron-left"></i> 白嫖？使用Github+Jsdelivr免费Cdn与图床。
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#工团主义"><span class="nav-number">1.</span> <span class="nav-text">工团主义</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#内涵"><span class="nav-number">1.1.</span> <span class="nav-text">内涵</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#历史"><span class="nav-number">1.2.</span> <span class="nav-text">历史</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#兴起与成长"><span class="nav-number">1.2.1.</span> <span class="nav-text">兴起与成长</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一战风云"><span class="nav-number">1.2.2.</span> <span class="nav-text">一战风云</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#衰落"><span class="nav-number">1.2.3.</span> <span class="nav-text">衰落</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#立场"><span class="nav-number">1.3.</span> <span class="nav-text">立场</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一战前后的左翼运动"><span class="nav-number">2.</span> <span class="nav-text">一战前后的左翼运动</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一战中与一战前"><span class="nav-number">2.1.</span> <span class="nav-text">一战中与一战前</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列宁主义及其先锋队理论"><span class="nav-number">2.2.</span> <span class="nav-text">列宁主义及其先锋队理论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#俄国革命"><span class="nav-number">2.3.</span> <span class="nav-text">俄国革命</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反对列宁的论战"><span class="nav-number">2.4.</span> <span class="nav-text">反对列宁的论战</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#国际组织分道扬镳"><span class="nav-number">2.5.</span> <span class="nav-text">国际组织分道扬镳</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mouuy"
+      src="https://cdn.jsdelivr.net/gh/mouuy/images@V1.3/1.jpg">
+  <p class="site-author-name" itemprop="name">Mouuy</p>
+  <div class="site-description" itemprop="description">无聊的人</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://mouuy.com/github.html" title="GitHub → https:&#x2F;&#x2F;mouuy.com&#x2F;github.html"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://mouuy.com/steam.html" title="steam → https:&#x2F;&#x2F;mouuy.com&#x2F;steam.html"><i class="fa fa-fw fa-steam"></i>steam</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mouuy</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/gh/mouuy/mouuy.github.io@latest/js/utils.js"></script>
+
+<script src="//cdn.jsdelivr.net/gh/mouuy/mouuy.github.io@latest/js/motion.js"></script>
+
+
+<script src="//cdn.jsdelivr.net/gh/mouuy/mouuy.github.io@latest/js/schemes/pisces.js"></script>
+
+
+<script src="//cdn.jsdelivr.net/gh/mouuy/mouuy.github.io@latest/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.getAttribute('pjax') !== null) {
+      script.setAttribute('pjax', '');
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/gh/mouuy/mouuy.github.io@latest/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : '1kJl11D57lEJ0Pf0ER4KLo2v-MdYXbMMI',
+      appKey     : 'scxr7ixDsCpBO2DVBmIvc89q',
+      placeholder: "“快活评论发动机”",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+    </div>
+</body>
+</html>
+<!-- 引用依赖 -->
+<link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+
+<!-- APlayer本体 -->
+<div class="aplayer" 
+  data-id="4875300296" 
+  data-server="netease" 
+  data-type="playlist" 
+  data-fixed="true" 
+  data-autoplay="false" 
+  data-order="random" 
+  data-volume="0.55" 
+  data-theme="#cc2400" 
+  data-preload="auto" >
+  </div>
+
